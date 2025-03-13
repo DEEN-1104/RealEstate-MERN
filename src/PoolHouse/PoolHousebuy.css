@@ -1,0 +1,266 @@
+.PoolHouse-Buy-container {
+    width: 1279px;
+    position: absolute;
+    top: 0px;
+
+}
+.PoolHouse-logo-Buy {
+    font-size:0px;
+    font-weight:bold;
+    margin-bottom: 0px;
+    font-family: Papyrus;
+}
+.PoolHouse-logo-Buy span {
+    color: red;
+}
+.PoolHouseBuy-nav-High:visited{
+    color: red;
+}
+/*.FilterOptions-buy{*/
+/*    position: absolute;*/
+/*    left: 500px;*/
+/*}*/
+.PoolHouse-filter-button-buy{
+    position: absolute;
+    left: 530px;
+    border-radius: 20px;
+}
+.PoolHouse-bed-button-buy{
+    position: absolute;
+    left: 625px;
+    border-radius: 20px;
+}
+.PoolHouse-price-button-buy{
+    position: absolute;
+    left: 730px;
+    border-radius: 20px;
+}
+.PoolHouse-navbar-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #FFBDBD;
+    color: #000;
+    width: 100%;
+    box-sizing: border-box;
+}
+.PoolHouse-Buy-Foot{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 390px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.PoolHouse-search-bar-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.PoolHouse-search-bar-buy input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.PoolHouse-search-button-buy {
+    padding: 5px;
+    background-color: #FF6B6B;
+    border: none;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 260px;
+}
+
+.PoolHouse-help-section-buy {
+    text-align: center;
+    padding: 40px 20px;
+}
+.PoolHouse-help-options-buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    max-width: 1200px;
+    margin: auto;
+}
+.PoolHouse-help-option-buy-on:visited{
+    color: #FF6B6B;
+}
+.PoolHouse-help-option-buy-noton:visited{
+    color: black;
+}
+.PoolHouse-help-option-buy {
+    text-align: center;
+    width: 100px;
+}
+.PoolHouse-help-option-buy-on{
+    text-decoration-color: #a01717;
+}
+
+.PoolHouse-help-option-buy img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+/* Property Listings */
+.PoolHouse-container-Buy {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.PoolHouse-grid-Buy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.PoolHouse-card-Buy {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.PoolHouse-card-Buy:hover {
+    transform: translateY(-5px);
+}
+
+.PoolHouse-card-Buy img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.PoolHouse-cardContent-Buy {
+    padding: 15px;
+}
+
+.PoolHouse-cardContent-Buy p {
+    margin: 5px 0;
+}
+.PoolHouse-heart-Buy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.PoolHouse-Houes-Buy {
+    width: 230px; /* Adjust as needed */
+    height: 200px; /* Ensure width and height are equal */
+    object-fit: cover;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+}
+.PoolHouse-cardrelative-Buy {
+    position: relative;
+}
+.PoolHouse-Fav-Button-Buy:focus { outline: none; }
+.PoolHouse-Fav-Button-Buy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+
+    border-radius: 190px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.PoolHouse-text-center-Buy {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.PoolHouse-text-center-Buy button {
+    background: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Top Cities Section */
+.PoolHouse-top-cities-Buy {
+    margin: 40px 0;
+}
+.PoolHouse-top-cities-Buy h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.PoolHouse-cities-container-Buy {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.PoolHouse-city-column-Buy p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+/* Footer Section */
+.PoolHouse-footer-Buy {
+    background-color: #f8bcbc;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+.PoolHouse-footer-title-Buy {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Papyrus;
+    text-align: center;
+}
+.PoolHouse-footer-title-Buy span {
+    color: red;
+}
+.PoolHouse-footer-content-Buy {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: left;
+}
+.PoolHouse-footer-section-Buy h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.PoolHouse-footer-section-Buy p {
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.PoolHouse-footer-section-Buy p:hover {
+    text-decoration: underline;
+}
+/* House Illustration Bar */
+.PoolHouse-house-bar-Buy {
+    width: 100%;
+    height: 80px;
+    /*background-image: url("/public/houses.svg"); !* Update the path accordingly *!*/
+    background-repeat: repeat-x;
+    background-size: contain;
+}

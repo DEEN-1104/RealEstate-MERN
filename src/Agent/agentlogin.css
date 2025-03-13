@@ -1,0 +1,85 @@
+.Agent-log-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.Agent-log-left-section{
+    flex: 1;
+    max-width: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #white;
+}
+.bg-img-agentlogin{
+    width: 780px;
+    height: 632px;
+}
+.agentlogin-right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-agentlogin {
+    width: 100%;
+    height: 40px;
+    background: #C82333;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.remember-me-agentlogin {
+    display: flex;
+    /*align-items: center;*/
+    gap: 6px; /* Adjust spacing */
+}
+.remember-me-agentlogin input {
+    width: 16px;
+    height: 25px;
+}
+input[type="checkbox"] {
+    transform: scale(1); /* Increase the checkbox size (adjust the scale value as needed) */
+    margin-right: 0px; /* Adds space between checkbox and text */
+}
+h2{
+    font-family: "Papyrus", sans-serif;
+}
+input {
+    color: black;
+    width: 400px;
+    height: 40px;
+    background: white;
+    font-weight: 100;
+    font-size: 1px;
+    border-color: #1a1a1a;
+    border-radius: 10px;
+    border-width: thin;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .login-left-section {
+        width: 90%;
+        padding: 20px;
+    }
+    input {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .btn-login {
+        font-size: 16px;
+    }
+}

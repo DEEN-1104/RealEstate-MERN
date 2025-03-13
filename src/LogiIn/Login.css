@@ -1,0 +1,194 @@
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Apply Animations */
+.login-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-left-section {
+    animation: slideInLeft 0.8s ease-in-out;
+}
+
+.login-right-section {
+    animation: slideInRight 0.8s ease-in-out;
+}
+
+.bg-img-login {
+    animation: scaleUp 0.6s ease-in-out;
+}
+
+/* Button Hover Effects */
+.btn-login,
+.btn-logingoogle,
+.btn-logoutgoogle {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn-login:hover,
+.btn-logingoogle:hover,
+.btn-logoutgoogle:hover {
+    transform: scale(1.05);
+    background-color: #a31d2a;
+}
+
+/* Input Field Focus Animation */
+input {
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #C82333;
+    box-shadow: 0px 0px 10px rgba(200, 35, 51, 0.5);
+}
+
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.login-left-section {
+    flex: 1;
+    max-width: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.bg-img-login {
+    width: 780px;
+    height: 632px;
+}
+
+.login-right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-error {
+    border: 1px solid #e57373 !important;
+    background-color: white !important;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-login {
+    width: 95%;
+    height: 40px;
+    background: #C82333;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-logingoogle {
+    width: 295px;
+    height: 40px;
+    background: #C82333;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-logoutgoogle {
+    width: 295px;
+    height: 40px;
+    background: #C82333;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.remember-me {
+    display: flex;
+    gap: 6px;
+}
+
+.remember-me input {
+    width: 16px;
+    height: 25px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1);
+    margin-right: 0px;
+}
+
+h2 {
+    font-family: "Papyrus", sans-serif;
+}
+
+input {
+    padding: 10px;
+    color: black;
+    width: 400px;
+    height: 40px;
+    background: white;
+    font-weight: 100;
+    font-size: 1px;
+    border-color: #1a1a1a;
+    border-radius: 10px;
+    border-width: thin;
+    cursor: pointer;
+}
