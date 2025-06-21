@@ -9,7 +9,7 @@ import Home from "./Home/Home.jsx";
 import HomeBuy from "./Buy/Home-Buy/Buy.jsx";
 import Land from "./Buy/Land-Buy/Landbuy.jsx";
 import ApartmentBuy from "./Buy/Apartment-Buy/Apartbuy.jsx";
-import PoolHouseBuy from "./Buy/PoolHouse-Buy/PoolHousebuy.jsx";
+import PoolHouseBuy from "./Buy/PoolHouse-buy/PoolHousebuy.jsx";
 import BeachHouseBuy from "./Buy/BeachHouse-Buy/BeachHousebuy.jsx";
 import FarmHouseBuy from "./Buy/FarmHouse-Buy/FarmHouse.jsx";
 import HomeRent from "./Rent/Home-Rent/Homerent.jsx";
