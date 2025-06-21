@@ -151,7 +151,8 @@ function SignUp() {
                     ) : (
                         <div>
                             <p>Welcome, {user.name}!</p>
-                            <button className="btn-logouts" onClick={handleLogout}>Logout</button>
+                            <button className="btn-logoutgoogle" onClick={handleLogout}>Logout</button><br/>
+                            <br/><Link to="login"><button className="btn-logingoogle" onClick={handleSubmit}>Login</button></Link>
                         </div>
                     )}
 

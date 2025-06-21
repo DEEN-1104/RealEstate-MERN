@@ -1,36 +1,36 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
 import "./BeachHousebuy.css"
-import buliding from "../assets/buliding.jpg";
-import homeImage from "../assets/Home/home.jpg";
-import beach from "../assets/beach.jpg";
-import poolhouse from "../assets/poolhouse.jpg";
-import vally from "../assets/vally.jpg";
-import countryhouse from "../assets/countryhouse.jpg";
-import bh1 from "../assets/BeachHouse/bh1.jpeg";
-import bh2 from "../assets/BeachHouse/bh2.jpeg";
-import bh3 from "../assets/BeachHouse/bh3.jpeg";
-import bh4 from "../assets/BeachHouse/bh4.jpeg";
-import bh5 from "../assets/BeachHouse/bh5.jpeg";
-import bh6 from "../assets/BeachHouse/bh6.jpeg";
-import bh7 from "../assets/BeachHouse/bh7.jpeg";
-import bh8 from "../assets/BeachHouse/bh8.jpeg";
-import bh9 from "../assets/BeachHouse/bh9.jpeg";
-import bh10 from "../assets/BeachHouse/bh10.jpeg";
-import bh11 from "../assets/BeachHouse/bh11.jpeg";
-import bh12 from "../assets/BeachHouse/bh12.jpeg";
-import bh13 from "../assets/BeachHouse/bh13.jpeg";
-import bh14 from "../assets/BeachHouse/bh14.jpeg";
-import bh15 from "../assets/BeachHouse/bh15.jpeg";
-import bh16 from "../assets/BeachHouse/bh16.jpeg";
-import bh17 from "../assets/BeachHouse/bh17.jpeg";
-import bh18 from "../assets/BeachHouse/bh18.jpeg";
-import bh19 from "../assets/BeachHouse/bh19.jpeg";
-import bh20 from "../assets/BeachHouse/bh20.jpeg";
-import bh21 from "../assets/BeachHouse/bh21.jpeg";
-import bh22 from "../assets/BeachHouse/bh22.jpeg";
-import bh23 from "../assets/BeachHouse/bh23.jpeg";
-import bh24 from "../assets/BeachHouse/bh24.jpeg";
+import buliding from '../../assets/buliding.jpg'
+import homeImage from "../../assets/Home/home.jpg";
+import beach from "../../assets/beach.jpg";
+import poolhouse from "../../assets/poolhouse.jpg";
+import vally from "../../assets/vally.jpg";
+import countryhouse from "../../assets/countryhouse.jpg";
+import bh1 from "../../assets/BeachHouse/bh1.jpeg";
+import bh2 from "../../assets/BeachHouse/bh2.jpeg";
+import bh3 from "../../assets/BeachHouse/bh3.jpeg";
+import bh4 from "../../assets/BeachHouse/bh4.jpeg";
+import bh5 from "../../assets/BeachHouse/bh5.jpeg";
+import bh6 from "../../assets/BeachHouse/bh6.jpeg";
+import bh7 from "../../assets/BeachHouse/bh7.jpeg";
+import bh8 from "../../assets/BeachHouse/bh8.jpeg";
+import bh9 from "../../assets/BeachHouse/bh9.jpeg";
+import bh10 from "../../assets/BeachHouse/bh10.jpeg";
+import bh11 from "../../assets/BeachHouse/bh11.jpeg";
+import bh12 from "../../assets/BeachHouse/bh12.jpeg";
+import bh13 from "../../assets/BeachHouse/bh13.jpeg";
+import bh14 from "../../assets/BeachHouse/bh14.jpeg";
+import bh15 from "../../assets/BeachHouse/bh15.jpeg";
+import bh16 from "../../assets/BeachHouse/bh16.jpeg";
+import bh17 from "../../assets/BeachHouse/bh17.jpeg";
+import bh18 from "../../assets/BeachHouse/bh18.jpeg";
+import bh19 from "../../assets/BeachHouse/bh19.jpeg";
+import bh20 from "../../assets/BeachHouse/bh20.jpeg";
+import bh21 from "../../assets/BeachHouse/bh21.jpeg";
+import bh22 from "../../assets/BeachHouse/bh22.jpeg";
+import bh23 from "../../assets/BeachHouse/bh23.jpeg";
+import bh24 from "../../assets/BeachHouse/bh24.jpeg";
 const allProperties = [
     { image: bh1, price: "₹45 Lakhs", beds: 5, baths: 6, sqft: "2,800 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
     { image: bh2, price: "₹35 Lakhs", beds: 3, baths: 4, sqft: "1,500 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
@@ -81,9 +81,9 @@ export default function Buy() {
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/buy" className="BeachHouseBuy-nav-High">Buy</Link></li>
-                        <li><Link to="/sale">Sale</Link></li>
-                        <li><Link to="/rent">Rent</Link></li>
-                        <li><Link to="/agentlogin">Agent</Link></li>
+                        {/* <li><Link to="/sale">Sale</Link></li> */}
+                        <li><Link to="/rent" >Rent</Link></li>
+                        <li><Link to="/Agent">Agent</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                     </ul>
                 </nav>
@@ -129,7 +129,7 @@ export default function Buy() {
                         </Link>
                     </div>
                     <div className="BeachHouse-help-option-buy">
-                        <Link to="/FarmHousebuy" className="BeachHouse-help-option-buy-noton">
+                        <Link to="../FarmHousebuy" className="BeachHouse-help-option-buy-noton">
                             <img src={countryhouse} alt="Farm House"/>
                             <p>Farm House</p>
                         </Link>

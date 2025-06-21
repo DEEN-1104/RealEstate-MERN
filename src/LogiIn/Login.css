@@ -7,7 +7,6 @@
         opacity: 1;
     }
 }
-
 @keyframes slideInLeft {
     from {
         opacity: 0;

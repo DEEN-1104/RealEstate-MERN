@@ -1,36 +1,36 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
-import "./PoolHousebuy.css"
-import buliding from "../assets/buliding.jpg";
-import homeImage from "../assets/Home/home.jpg";
-import beach from "../assets/beach.jpg";
-import poolhouse from "../assets/poolhouse.jpg";
-import vally from "../assets/vally.jpg";
-import countryhouse from "../assets/countryhouse.jpg";
-import ph1 from "../assets/PoolHouse/ph1.jpg";
-import ph2 from "../assets/PoolHouse/ph2.jpg";
-import ph3 from "../assets/PoolHouse/ph3.jpg";
-import ph4 from "../assets/PoolHouse/ph4.jpg";
-import ph5 from "../assets/PoolHouse/ph5.jpg";
-import ph6 from "../assets/PoolHouse/ph6.jpg";
-import ph7 from "../assets/PoolHouse/ph7.jpg";
-import ph8 from "../assets/PoolHouse/ph8.jpg";
-import ph9 from "../assets/PoolHouse/ph9.jpg";
-import ph10 from "../assets/PoolHouse/ph10.jpg";
-import ph11 from "../assets/PoolHouse/ph11.jpg";
-import ph12 from "../assets/PoolHouse/ph12.jpg";
-import ph13 from "../assets/PoolHouse/ph13.jpg";
-import ph14 from "../assets/PoolHouse/ph14.jpg";
-import ph15 from "../assets/PoolHouse/ph15.jpg";
-import ph16 from "../assets/PoolHouse/ph16.jpg";
-import ph17 from "../assets/PoolHouse/ph17.jpg";
-import ph18 from "../assets/PoolHouse/ph18.jpg";
-import ph19 from "../assets/PoolHouse/ph19.jpg";
-import ph20 from "../assets/PoolHouse/ph20.jpg";
-import ph21 from "../assets/PoolHouse/ph21.jpg";
-import ph22 from "../assets/PoolHouse/ph22.jpg";
-import ph23 from "../assets/PoolHouse/ph23.jpg";
-import ph24 from "../assets/PoolHouse/ph24.jpg";
+import "./PoolHouserent.css"
+import buliding from '../../assets/buliding.jpg'
+import homeImage from "../../assets/Home/home.jpg";
+import beach from "../../assets/beach.jpg";
+import poolhouse from "../../assets/poolhouse.jpg";
+import vally from "../../assets/vally.jpg";
+import countryhouse from "../../assets/countryhouse.jpg";
+import ph1 from "../../assets/PoolHouse/ph1.jpg";
+import ph2 from "../../assets/PoolHouse/ph2.jpg";
+import ph3 from "../../assets/PoolHouse/ph3.jpg";
+import ph4 from "../../assets/PoolHouse/ph4.jpg";
+import ph5 from "../../assets/PoolHouse/ph5.jpg";
+import ph6 from "../../assets/PoolHouse/ph6.jpg";
+import ph7 from "../../assets/PoolHouse/ph7.jpg";
+import ph8 from "../../assets/PoolHouse/ph8.jpg";
+import ph9 from "../../assets/PoolHouse/ph9.jpg";
+import ph10 from "../../assets/PoolHouse/ph10.jpg";
+import ph11 from "../../assets/PoolHouse/ph11.jpg";
+import ph12 from "../../assets/PoolHouse/ph12.jpg";
+import ph13 from "../../assets/PoolHouse/ph13.jpg";
+import ph14 from "../../assets/PoolHouse/ph14.jpg";
+import ph15 from "../../assets/PoolHouse/ph15.jpg";
+import ph16 from "../../assets/PoolHouse/ph16.jpg";
+import ph17 from "../../assets/PoolHouse/ph17.jpg";
+import ph18 from "../../assets/PoolHouse/ph18.jpg";
+import ph19 from "../../assets/PoolHouse/ph19.jpg";
+import ph20 from "../../assets/PoolHouse/ph20.jpg";
+import ph21 from "../../assets/PoolHouse/ph21.jpg";
+import ph22 from "../../assets/PoolHouse/ph22.jpg";
+import ph23 from "../../assets/PoolHouse/ph23.jpg";
+import ph24 from "../../assets/PoolHouse/ph24.jpg";
 const allProperties = [
     { image: ph1, price: "₹45 Lakhs", beds: 5, baths: 6, sqft: "2,800 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
     { image: ph2, price: "₹35 Lakhs", beds: 3, baths: 4, sqft: "1,500 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
@@ -80,10 +80,10 @@ export default function Buy() {
                 <nav>
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/buy" className="PoolHouseBuy-nav-High">Buy</Link></li>
-                        <li><Link to="/sale">Sale</Link></li>
-                        <li><Link to="/rent">Rent</Link></li>
-                        <li><Link to="/agentlogin">Agent</Link></li>
+                        <li><Link to="/buy" >Buy</Link></li>
+                        {/* <li><Link to="/sale">Sale</Link></li> */}
+                        <li><Link to="/rent" className="PoolHouseBuy-nav-High">Rent</Link></li>
+                        <li><Link to="/Agent">Agent</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                     </ul>
                 </nav>
@@ -99,19 +99,19 @@ export default function Buy() {
             <section className="PoolHouse-help-section-buy">
                 <div className="PoolHouse-help-options-buy">
                     <div className="PoolHouse-help-option-buy">
-                        <Link to="/Apt-buy" className="PoolHouse-help-option-buy-noton">
+                        <Link to="/Aptrent" className="PoolHouse-help-option-buy-noton">
                             <img src={buliding} alt="Apartment"/>
                             <p >Apartment</p>
                         </Link>
                     </div>
                     <div className="PoolHouse-help-option-buy">
-                        <Link to="/buy" className="PoolHouse-help-option-buy-noton">
+                        <Link to="/rent" className="PoolHouse-help-option-buy-noton">
                             <img src={homeImage} alt="House"/>
                             <p>House</p>
                         </Link>
                     </div>
                     <div className="PoolHouse-help-option-buy">
-                        <Link to="/BeachHousebuy" className="PoolHouse-help-option-buy-noton">
+                        <Link to="/BeachHouserent" className="PoolHouse-help-option-buy-noton">
                             <img src={beach} alt="Beach House"/>
                             <p>Beach House</p>
                         </Link>
@@ -123,13 +123,13 @@ export default function Buy() {
                         </Link>
                     </div>
                     <div className="PoolHouse-help-option-buy">
-                        <Link to="/land-buy" className="PoolHouse-help-option-buy-noton">
+                        <Link to="/landrent" className="PoolHouse-help-option-buy-noton">
                             <img src={vally} alt="Land"/>
                             <p>Land</p>
                         </Link>
                     </div>
                     <div className="PoolHouse-help-option-buy">
-                        <Link to="/FarmHousebuy" className="PoolHouse-help-option-buy-noton">
+                        <Link to="/FarmHouserent" className="PoolHouse-help-option-buy-noton">
                             <img src={countryhouse} alt="Farm House"/>
                             <p>Farm House</p>
                         </Link>

@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Landbuy.css"
-import buliding from "../assets/buliding.jpg";
-import homeImage from "../assets/Home/home.jpg";
-import beach from "../assets/beach.jpg";
-import poolhouse from "../assets/poolhouse.jpg";
-import vally from "../assets/vally.jpg";
-import countryhouse from "../assets/countryhouse.jpg";
-import land1 from "../assets/Land/land1.jpg"
-import land2 from "../assets/Land/land2.jpg"
-import land3 from "../assets/Land/land3.jpg"
-import land4 from "../assets/Land/land4.jpg"
-import land5 from "../assets/Land/land5.jpg"
-import land6 from "../assets/Land/land6.jpg"
-import land7 from "../assets/Land/land7.jpg"
-import land8 from "../assets/Land/land8.jpg"
-import land9 from "../assets/Land/land9.jpg"
-import land10 from "../assets/Land/land10.jpg"
-import land11 from "../assets/Land/land11.jpg"
-import land12 from "../assets/Land/land12.jpg"
-import land13 from "../assets/Land/land13.jpg"
-import land14 from "../assets/Land/land14.jpg"
-import land15 from "../assets/Land/land15.jpg"
-import land16 from "../assets/Land/land16.jpg"
-import land17 from "../assets/Land/land17.jpg"
-import land18 from "../assets/Land/land18.jpg"
-import land19 from "../assets/Land/land19.jpg"
-import land20 from "../assets/Land/land20.jpg"
-import land21 from "../assets/Land/land21.jpg"
-import land22 from "../assets/Land/land22.jpg"
-import land23 from "../assets/Land/land23.jpg"
-import land24 from "../assets/Land/land24.jpg"
+import buliding from '../../assets/buliding.jpg'
+import homeImage from "../../assets/Home/home.jpg";
+import beach from "../../assets/beach.jpg";
+import poolhouse from "../../assets/poolhouse.jpg";
+import vally from "../../assets/vally.jpg";
+import countryhouse from "../../assets/countryhouse.jpg";
+import land1 from "../../assets/Land/land1.jpg"
+import land2 from "../../assets/Land/land2.jpg"
+import land3 from "../../assets/Land/land3.jpg"
+import land4 from "../../assets/Land/land4.jpg"
+import land5 from "../../assets/Land/land5.jpg"
+import land6 from "../../assets/Land/land6.jpg"
+import land7 from "../../assets/Land/land7.jpg"
+import land8 from "../../assets/Land/land8.jpg"
+import land9 from "../../assets/Land/land9.jpg"
+import land10 from "../../assets/Land/land10.jpg"
+import land11 from "../../assets/Land/land11.jpg"
+import land12 from "../../assets/Land/land12.jpg"
+import land13 from "../../assets/Land/land13.jpg"
+import land14 from "../../assets/Land/land14.jpg"
+import land15 from "../../assets/Land/land15.jpg"
+import land16 from "../../assets/Land/land16.jpg"
+import land17 from "../../assets/Land/land17.jpg"
+import land18 from "../../assets/Land/land18.jpg"
+import land19 from "../../assets/Land/land19.jpg"
+import land20 from "../../assets/Land/land20.jpg"
+import land21 from "../../assets/Land/land21.jpg"
+import land22 from "../../assets/Land/land22.jpg"
+import land23 from "../../assets/Land/land23.jpg"
+import land24 from "../../assets/Land/land24.jpg"
 const allProperties = [
     { image: land1, price: "₹45 Lakhs", beds: 5, baths: 6, sqft: "2,800 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
     { image: land2, price: "₹35 Lakhs", beds: 3, baths: 4, sqft: "1,500 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
@@ -81,9 +81,9 @@ export default function Buy() {
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/buy" className="LandBuy-nav-High">Buy</Link></li>
-                        <li><Link to="/sale">Sale</Link></li>
-                        <li><Link to="/rent">Rent</Link></li>
-                        <li><Link to="/agentlogin">Agent</Link></li>
+                        {/* <li><Link to="/sale">Sale</Link></li> */}
+                        <li><Link to="/rent" >Rent</Link></li>
+                        <li><Link to="/Agent">Agent</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                     </ul>
                 </nav>

@@ -29,20 +29,28 @@ export default function Home() {
         );
     };
     return (
+        <>
         <div className="App-Home">
             {/* Navbar */}
             <header className="App-header">
                 <nav className="navbar-Home">
-                    <div className="logo-Home">RealEstate</div>
+                <div className="logo-Buy">
+                    <h2>
+                        <span>Real</span>Estate
+                    </h2><br/></div>
                     <ul className="nav-links-Home">
                         <li><a href="#">Home</a></li>
                         <Link to="/buy">
                         <li><a href="#">Buy</a></li></Link>
-                        <li><a href="#">Sale</a></li>
-                        <li><a href="#">Rent</a></li>
-                        <Link to="/agentlogin">
+                        {/* <li><a href="#">Sale</a></li> */}
+                        <Link to="/rent">
+                        <li><a href="#">Rent</a></li></Link>
+                        <Link to="/Agent">
                         <li><a href="#">Agent</a></li></Link>
-                        <li><a href="#">About Us</a></li>
+                        <Link to="/admin/*">
+                        <li><a href="#">Admin</a></li></Link>
+                        <Link to="/AboutUS">
+                        <li><a href="#">About Us</a></li></Link>
                     </ul>
                     <div className="auth-buttons-Home">
                         <Link to="/login">
@@ -62,8 +70,8 @@ export default function Home() {
                             <ul>
                                 <Link to="/buy">
                                 <li><a href="#">Buy</a></li></Link>
-                                <li><a href="#">Sale</a></li>
-                                <li><a href="#">Rent</a></li>
+                                {/* <li><a href="#">Sale</a></li> */}<Link to="/rent">
+                                <li><a href="#">Rent</a></li></Link>
                             </ul>
                         </div>
                         <div className="search-bar-Home">
@@ -136,68 +144,36 @@ export default function Home() {
                             <input placeholder="Enter email address" className="w-1/3" />
                             <button>Subscribe</button>
                         </div>
+                </div></main>
+    <div className="footer-Buy">
+                <h2 className="footer-title-Buy">
+                    <span>Real</span>Estate
+                </h2><br/>
+                <div className="footer-content-Buy">
+                    <div className="footer-section-Buy">
+                        <h3>COMPANY</h3>
+                        <p>About Us</p>
+                        <p>Career</p>
+                        <p>Blog</p>
+                        <p>Rental Guides</p>
+                    </div>
+                    <div className="footer-section-Buy">
+                        <h3>SUPPORT</h3>
+                        <p>Help Center</p>
+                        <p>Contact Us</p>
+                        <p>Terms and Conditions</p>
+                        <p>Feedback</p>
+                    </div>
+                    <div className="footer-section-Buy">
+                        <h3>EXPLORE</h3>
+                        <p>Advertise with Us</p>
+                        <p>List Property</p>
+                        <p>Landlord Resources</p>
+                        <p>Become an Agent</p>
+                    </div>
                 </div>
-                {/*<div className="Home-top-cities">*/}
-                {/*    <h2 className="Home-Foot">Search In Top Cities</h2><br/>*/}
-                {/*    <div className="Home-cities-container">*/}
-                {/*        <div className="Home-city-column">*/}
-                {/*            <p>Saravanampatti</p>*/}
-                {/*            <p>Vadavalli</p>*/}
-                {/*            <p>Thudiyalur</p>*/}
-                {/*            <p>Kavundampalayam</p>*/}
-                {/*            <p>Kalapatti</p>*/}
-                {/*            <p>Sundarapuram</p>*/}
-                {/*            <p>Perur</p>*/}
-                {/*            <p>Kinathukadavu</p>*/}
-                {/*            <p>Sulur</p>*/}
-                {/*            <p>Madukkarai</p>*/}
-                {/*        </div>*/}
-                {/*        <div className="Home-city-column">*/}
-                {/*            <p>Singanallur</p>*/}
-                {/*            <p>RS Puram</p>*/}
-                {/*            <p>Saibaba Colony</p>*/}
-                {/*            <p>Gandhipuram</p>*/}
-                {/*            <p>Race Course</p>*/}
-                {/*            <p>Peelamedu</p>*/}
-                {/*            <p>Ukkadam</p>*/}
-                {/*            <p>Town Hall</p>*/}
-                {/*            <p>Sidhapudur</p>*/}
-                {/*            <p>Ganapathy</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/*/!* House Illustration Bar *!/*/}
-                {/*<div className="Home-house-bar"></div>*/}
-                {/*/!* Footer Section *!/*/}
-                {/*<div className="Home-footer">*/}
-                {/*    <h2 className="Home-footer-title">*/}
-                {/*        <span>Real</span>Estate*/}
-                {/*    </h2><br/>*/}
-                {/*    <div className="Home-footer-content">*/}
-                {/*        <div className="Home-footer-section">*/}
-                {/*            <h3>COMPANY</h3>*/}
-                {/*            <p>About Us</p>*/}
-                {/*            <p>Career</p>*/}
-                {/*            <p>Blog</p>*/}
-                {/*            <p>Rental Guides</p>*/}
-                {/*        </div>*/}
-                {/*        <div className="Home-footer-section">*/}
-                {/*            <h3>SUPPORT</h3>*/}
-                {/*            <p>Help Center</p>*/}
-                {/*            <p>Contact Us</p>*/}
-                {/*            <p>Terms and Conditions</p>*/}
-                {/*            <p>Feedback</p>*/}
-                {/*        </div>*/}
-                {/*        <div className="Home-footer-section">*/}
-                {/*            <h3>EXPLORE</h3>*/}
-                {/*            <p>Advertise with Us</p>*/}
-                {/*            <p>List Property</p>*/}
-                {/*            <p>Landlord Resources</p>*/}
-                {/*            <p>Become an Agent</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-            </main>
         </div>
+        </div>
+    </>
     );
 }

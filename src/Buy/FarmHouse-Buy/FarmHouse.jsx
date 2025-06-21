@@ -1,36 +1,36 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
 import "./FarmHouse.css"
-import buliding from "../assets/buliding.jpg";
-import homeImage from "../assets/Home/home.jpg";
-import beach from "../assets/beach.jpg";
-import poolhouse from "../assets/poolhouse.jpg";
-import vally from "../assets/vally.jpg";
-import countryhouse from "../assets/countryhouse.jpg";
-import fh1 from "../assets/FarmHouse/fh1.jpg";
-import fh2 from "../assets/FarmHouse/fh2.jpg";
-import fh3 from "../assets/FarmHouse/fh3.jpg";
-import fh4 from "../assets/FarmHouse/fh4.jpg";
-import fh5 from "../assets/FarmHouse/fh5.jpg";
-import fh6 from "../assets/FarmHouse/fh6.jpg";
-import fh7 from "../assets/FarmHouse/fh7.jpg";
-import fh8 from "../assets/FarmHouse/fh8.jpg";
-import fh9 from "../assets/FarmHouse/fh9.jpg";
-import fh10 from "../assets/FarmHouse/fh10.jpg";
-import fh11 from "../assets/FarmHouse/fh11.jpg";
-import fh12 from "../assets/FarmHouse/fh12.jpg";
-import fh13 from "../assets/FarmHouse/fh13.jpg";
-import fh14 from "../assets/FarmHouse/fh14.jpg";
-import fh15 from "../assets/FarmHouse/fh15.jpg";
-import fh16 from "../assets/FarmHouse/fh16.jpg";
-import fh17 from "../assets/FarmHouse/fh17.jpg";
-import fh18 from "../assets/FarmHouse/fh18.jpg";
-import fh19 from "../assets/FarmHouse/fh19.jpg";
-import fh20 from "../assets/FarmHouse/fh20.jpg";
-import fh21 from "../assets/FarmHouse/fh21.jpg";
-import fh22 from "../assets/FarmHouse/fh22.jpg";
-import fh23 from "../assets/FarmHouse/fh23.jpg";
-import fh24 from "../assets/FarmHouse/fh23.jpg";
+import buliding from '../../assets/buliding.jpg'
+import homeImage from "../../assets/Home/home.jpg";
+import beach from "../../assets/beach.jpg";
+import poolhouse from "../../assets/poolhouse.jpg";
+import vally from "../../assets/vally.jpg";
+import countryhouse from "../../assets/countryhouse.jpg";
+import fh1 from "../../assets/FarmHouse/fh1.jpg";
+import fh2 from "../../assets/FarmHouse/fh2.jpg";
+import fh3 from "../../assets/FarmHouse/fh3.jpg";
+import fh4 from "../../assets/FarmHouse/fh4.jpg";
+import fh5 from "../../assets/FarmHouse/fh5.jpg";
+import fh6 from "../../assets/FarmHouse/fh6.jpg";
+import fh7 from "../../assets/FarmHouse/fh7.jpg";
+import fh8 from "../../assets/FarmHouse/fh8.jpg";
+import fh9 from "../../assets/FarmHouse/fh9.jpg";
+import fh10 from "../../assets/FarmHouse/fh10.jpg";
+import fh11 from "../../assets/FarmHouse/fh11.jpg"
+import fh12 from "../../assets/FarmHouse/fh12.jpg";
+import fh13 from "../../assets/FarmHouse/fh13.jpg";
+import fh14 from "../../assets/FarmHouse/fh14.jpg";
+import fh15 from "../../assets/FarmHouse/fh15.jpg";
+import fh16 from "../../assets/FarmHouse/fh16.jpg";
+import fh17 from "../../assets/FarmHouse/fh17.jpg";
+import fh18 from "../../assets/FarmHouse/fh18.jpg";
+import fh19 from "../../assets/FarmHouse/fh19.jpg";
+import fh20 from "../../assets/FarmHouse/fh20.jpg";
+import fh21 from "../../assets/FarmHouse/fh21.jpg";
+import fh22 from "../../assets/FarmHouse/fh22.jpg";
+import fh23 from "../../assets/FarmHouse/fh23.jpg";
+import fh24 from "../../assets/FarmHouse/fh23.jpg";
 const allProperties = [
     { image: fh1, price: "₹45 Lakhs", beds: 5, baths: 6, sqft: "2,800 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
     { image: fh2, price: "₹35 Lakhs", beds: 3, baths: 4, sqft: "1,500 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
@@ -81,9 +81,9 @@ export default function Buy() {
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/buy" className="FarmHouseBuy-nav-High">Buy</Link></li>
-                        <li><Link to="/sale">Sale</Link></li>
-                        <li><Link to="/rent">Rent</Link></li>
-                        <li><Link to="/agentlogin">Agent</Link></li>
+                        {/* <li><Link to="/sale">Sale</Link></li> */}
+                        <li><Link to="/rent" >Rent</Link></li>
+                        <li><Link to="/Agent">Agent</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                     </ul>
                 </nav>

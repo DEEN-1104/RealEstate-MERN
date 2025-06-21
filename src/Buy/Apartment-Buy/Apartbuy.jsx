@@ -1,36 +1,36 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
 import "./Aptbuy.css"
-import buliding from "../assets/buliding.jpg";
-import homeImage from "../assets/Home/home.jpg";
-import beach from "../assets/beach.jpg";
-import poolhouse from "../assets/poolhouse.jpg";
-import vally from "../assets/vally.jpg";
-import countryhouse from "../assets/countryhouse.jpg";
-import apt1 from "../assets/Apartment/apt1.jpg";
-import apt2 from "../assets/Apartment/apt2.jpg";
-import apt3 from "../assets/Apartment/apt3.jpg";
-import apt4 from "../assets/Apartment/apt4.jpg";
-import apt5 from "../assets/Apartment/apt5.jpg";
-import apt6 from "../assets/Apartment/apt6.jpg";
-import apt7 from "../assets/Apartment/apt7.jpg";
-import apt8 from "../assets/Apartment/apt8.jpg";
-import apt9 from "../assets/Apartment/apt9.jpg";
-import apt10 from "../assets/Apartment/apt10.jpg";
-import apt11 from "../assets/Apartment/apt11.jpg";
-import apt12 from "../assets/Apartment/apt12.jpg";
-import apt13 from "../assets/Apartment/apt13.jpg";
-import apt14 from "../assets/Apartment/apt14.jpg";
-import apt15 from "../assets/Apartment/apt15.jpg";
-import apt16 from "../assets/Apartment/apt16.jpg";
-import apt17 from "../assets/Apartment/apt17.jpg";
-import apt18 from "../assets/Apartment/apt18.jpg";
-import apt19 from "../assets/Apartment/apt19.jpg";
-import apt20 from "../assets/Apartment/apt20.jpg";
-import apt21 from "../assets/Apartment/apt21.jpg";
-import apt22 from "../assets/Apartment/apt22.jpg";
-import apt23 from "../assets/Apartment/apt23.jpg";
-import apt24 from "../assets/Apartment/apt24.jpg";
+import buliding from '../../assets/buliding.jpg'
+import homeImage from "../../assets/Home/home.jpg";
+import beach from "../../assets/beach.jpg";
+import poolhouse from "../../assets/poolhouse.jpg";
+import vally from "../../assets/vally.jpg";
+import countryhouse from "../../assets/countryhouse.jpg";
+import apt1 from "../../assets/Apartment/apt1.jpg";
+import apt2 from "../../assets/Apartment/apt2.jpg";
+import apt3 from "../../assets/Apartment/apt3.jpg";
+import apt4 from "../../assets/Apartment/apt4.jpg";
+import apt5 from "../../assets/Apartment/apt5.jpg";
+import apt6 from "../../assets/Apartment/apt6.jpg";
+import apt7 from "../../assets/Apartment/apt7.jpg";
+import apt8 from "../../assets/Apartment/apt8.jpg";
+import apt9 from "../../assets/Apartment/apt9.jpg";
+import apt10 from "../../assets/Apartment/apt10.jpg";
+import apt11 from "../../assets/Apartment/apt11.jpg";
+import apt12 from "../../assets/Apartment/apt12.jpg";
+import apt13 from "../../assets/Apartment/apt13.jpg";
+import apt14 from "../../assets/Apartment/apt14.jpg";
+import apt15 from "../../assets/Apartment/apt15.jpg";
+import apt16 from "../../assets/Apartment/apt16.jpg";
+import apt17 from "../../assets/Apartment/apt17.jpg";
+import apt18 from "../../assets/Apartment/apt18.jpg";
+import apt19 from "../../assets/Apartment/apt19.jpg";
+import apt20 from "../../assets/Apartment/apt20.jpg";
+import apt21 from "../../assets/Apartment/apt21.jpg";
+import apt22 from "../../assets/Apartment/apt22.jpg";
+import apt23 from "../../assets/Apartment/apt23.jpg";
+import apt24 from "../../assets/Apartment/apt24.jpg";
 const allProperties = [
     { image: apt1, price: "₹45 Lakhs", beds: 5, baths: 6, sqft: "2,800 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
     { image: apt2, price: "₹35 Lakhs", beds: 3, baths: 4, sqft: "1,500 sqft", location: "57th Cross, Gandhipuram, TS No.12" },
@@ -80,9 +80,9 @@ export default function Buy() {
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/buy" className="AptBuy-nav-High">Buy</Link></li>
-                        <li><Link to="/sale">Sale</Link></li>
-                        <li><Link to="/rent">Rent</Link></li>
-                        <li><Link to="/agentlogin">Agent</Link></li>
+                        {/* <li><Link to="/sale">Sale</Link></li> */}
+                        <li><Link to="/rent" >Rent</Link></li>
+                        <li><Link to="/Agent">Agent</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                     </ul>
                 </nav>

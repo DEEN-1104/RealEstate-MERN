@@ -1,35 +1,36 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";  // ✅ Import useState
-import "./Buy.css";
+import "./buy.css";
 
-import buliding from "../assets/buliding.jpg";
-import homeImage from "../assets/Home/home.jpg";
-import beach from "../assets/beach.jpg";
-import poolhouse from "../assets/poolhouse.jpg";
-import vally from "../assets/vally.jpg";
-import countryhouse from "../assets/countryhouse.jpg";
-import house1 from "../assets/Home/house1.jpg";
-import house2 from "../assets/Home/house2.jpg";
-import house3 from "../assets/Home/house3.jpg";
-import house4 from "../assets/Home/house4.jpg";
-import house5 from "../assets/Home/house5.jpg";
-import house6 from "../assets/Home/house6.jpg";
-import house7 from "../assets/Home/house7.jpg";
-import house8 from "../assets/Home/house8.jpg";
-import house9 from "../assets/Home/house9.jpg";
-import house10 from "../assets/Home/house10.jpg";
-import house11 from "../assets/Home/house11.jpg";
-import house12 from "../assets/Home/house12.jpg";
-import house13 from "../assets/Home/house13.jpg";
-import house14 from "../assets/Home/house14.jpg";
-import house15 from "../assets/Home/house15.jpg";
-import house16 from "../assets/Home/house16.jpg";
-import house17 from "../assets/Home/house17.jpg";
-import house18 from "../assets/Home/house18.jpg";
-import house19 from "../assets/Home/house19.jpg";
-import house20 from "../assets/Home/house20.jpg";
-import house21 from "../assets/Home/house21.jpg";
-import house22 from "../assets/Home/house22.jpg";
+
+import buliding from '../../assets/buliding.jpg'
+import homeImage from "../../assets/Home/home.jpg";
+import beach from "../../assets/beach.jpg";
+import poolhouse from "../../assets/poolhouse.jpg";
+import vally from "../../assets/vally.jpg";
+import countryhouse from "../../assets/countryhouse.jpg";
+import house1 from "../../assets/Home/house1.jpg";
+import house2 from "../../assets/Home/house2.jpg";
+import house3 from "../../assets/Home/house3.jpg";
+import house4 from "../../assets/Home/house4.jpg";
+import house5 from "../../assets/Home/house5.jpg";
+import house6 from "../../assets/Home/house6.jpg";
+import house7 from "../../assets/Home/house7.jpg";
+import house8 from "../../assets/Home/house8.jpg";
+import house9 from "../../assets/Home/house9.jpg";
+import house10 from "../../assets/Home/house10.jpg";
+import house11 from "../../assets/Home/house11.jpg";
+import house12 from "../../assets/Home/house12.jpg";
+import house13 from "../../assets/Home/house13.jpg";
+import house14 from "../../assets/Home/house14.jpg";
+import house15 from "../../assets/Home/house15.jpg";
+import house16 from "../../assets/Home/house16.jpg";
+import house17 from "../../assets/Home/house17.jpg";
+import house18 from "../../assets/Home/house18.jpg";
+import house19 from "../../assets/Home/house19.jpg";
+import house20 from "../../assets/Home/house20.jpg";
+import house21 from "../../assets/Home/house21.jpg";
+import house22 from "../../assets/Home/house22.jpg";
 // import house23 from "../assets/house23.jpg";
 // import house24 from "../assets/house24.jpg";
 const allProperties = [
@@ -62,11 +63,40 @@ const allProperties = [
 export default function Buy() {
     const [favorites, setFavorites] = useState([]);
     const [visibleProperties, setVisibleProperties] = useState(10);
-    const toggleFavorite = (index) => {
+    const userId = "test-user-123"; // Replace with real user ID if available
+
+    const toggleFavorite = async (index) => {
         setFavorites((prev) =>
             prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
         );
+    
+        const property = allProperties[index];
+    
+        // Send like to backend only if it's a new favorite
+        if (!favorites.includes(index)) {
+            try {
+                const response = await fetch("http://localhost:3002/like-property", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        userId: userId,
+                        propertyId: `${property.price}-${property.location}`, // can be adjusted for uniqueness
+                    }),
+                });
+    
+                if (response.ok) {
+                    console.log("✅ Liked property saved to DB");
+                } else {
+                    console.error("❌ Failed to save liked property");
+                }
+            } catch (error) {
+                console.error("❌ Error connecting to backend:", error);
+            }
+        }
     };
+    
     const loadMoreProperties = () => {
         setVisibleProperties((prev) => prev + 6);
     };
@@ -83,10 +113,11 @@ export default function Buy() {
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/buy" className="Buy-nav-High">Buy</Link></li>
-                        <li><Link to="/sale">Sale</Link></li>
-                        <li><Link to="/rent">Rent</Link></li>
-                        <li><Link to="/agentlogin">Agent</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
+                        {/* <li><Link to="/sale">Sale</Link></li> */}
+                        <li><Link to="/rent" >Rent</Link></li>
+                        <li><Link to="/Agent">Agent</Link></li>
+                        <Link to="/AboutUS">
+                        <li>About Us</li></Link>
                     </ul>
                 </nav>
             </header>
@@ -159,8 +190,7 @@ export default function Buy() {
                     {allProperties.slice(0, visibleProperties).map((property, index) => (
                         <div key={index} className="cardrelative-Buy">
                             <button className="Fav-Button-Buy"
-                                    onClick={() => toggleFavorite(index)}
-                            >
+                                    onClick={() => toggleFavorite(index)}>
                                 {favorites.includes(index) ? "❤" : "🤍"}
                             </button>
                             <img src={property.image} alt="House" className="Houes-Buy"/>

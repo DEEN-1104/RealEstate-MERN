@@ -1,0 +1,91 @@
+.agents-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  .agents-list {
+    width: 70%;
+  }
+  
+  .agent-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+  }
+  
+  .agent-initial {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .agent-details h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .whatsapp-btn, .appointment-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+  }
+  
+  .appointment-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .agent-ranking {
+    width: 25%;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .agent-ranking h3 {
+    font-size: 18px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  .agent-ranking ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .agent-ranking li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .rank {
+    font-weight: bold;
+    margin-right: 8px;
+  }

@@ -32,20 +32,20 @@ function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!validateForm()) return;
+        // if (!validateForm()) return;
 
         try {
             const response = await axios.post("http://localhost:3001/login", formData);
             console.log(response.data); // Log the response data for debugging
             if (response.data === "Success") {
                 navigate("/home");
-            } else if (response.data === "❌ Incorrect Password") {
+            } 
+             if (response.data === "Incorrect Password!") {
                 setErrors({ ...errors, password: "Incorrect password, please try again." });
-            } else if (response.data === "❌ No record found") {
+            } 
+             if (response.data === "No record found") {
                 setErrors({ ...errors, email: "No account found with this email." });
-            } else {
-                alert(response.data);
-            }
+            } 
         } catch (error) {
             console.error("Login error:", error);
         }
@@ -64,7 +64,7 @@ function Login() {
     };
 
     return (
-        <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+        <GoogleOAuthProvider clientId="246997270474-5sc5r8dldl3i3mfqk3filj092kn08qgf.apps.googleusercontent.com">
             <div className="login-container">
                 <div className="login-left-section">
                     <img className="loginlogo-image" src={logo} alt="logo" width={100} />
@@ -108,7 +108,8 @@ function Login() {
                                 </label>
                             </div>
                             <button type="submit" className="btn-login">Login</button><br/>
-                            <br/><GoogleLogin className="btn-logingoogle"
+                            <br/>
+                            <GoogleLogin className="btn-logingoogle"
                                 onSuccess={handleGoogleLogin}
                                 onError={() => console.log("Google Login Failed")}
                             /> 
@@ -117,7 +118,7 @@ function Login() {
                         <div>
                             <p>Welcome, {user.name}!</p>
                             <button className="btn-logoutgoogle" onClick={handleLogout}>Logout</button><br/>
-                            <br/><button className="btn-logingoogle" onClick={handleSubmit}>Login</button>
+                            <br/><Link to="login"><button className="btn-logingoogle" onClick={handleSubmit}>Login</button></Link>
                         </div>
                     )}
                     <br />
@@ -127,7 +128,7 @@ function Login() {
                     <img className="bg-img-login" src={bgImage} alt="BackgroundImage" />
                 </div>
             </div>
-        </GoogleOAuthProvider>
+         </GoogleOAuthProvider>
     );
 }
 
